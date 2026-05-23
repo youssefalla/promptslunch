@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — 445 AI Children's Book Prompts</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sky: #4FC3F7;
+    --sun: #FFD54F;
+    --grass: #66BB6A;
+    --coral: #FF7043;
+    --lavender: #CE93D8;
+    --cream: #FFF8E1;
+    --dark: #1A1A2E;
+    --ink: #2C2C54;
+    --white: #FFFFFF;
+    --soft-gray: #F5F5F5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+
+  /* ===== HEADER ===== */
+  .site-header {
+    background: linear-gradient(160deg, #0D47A1 0%, #1565C0 60%, #1976D2 100%);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+  }
+  .site-logo {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.4rem;
+    color: var(--sun);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .back-btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid rgba(255,255,255,0.4);
+    padding: 8px 18px;
+    border-radius: 50px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .back-btn:hover {
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.8);
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: linear-gradient(160deg, #0D47A1 0%, #1565C0 40%, #1976D2 70%, #4FC3F7 100%);
+    padding: 60px 20px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 100px;
+    background: var(--cream);
+    clip-path: ellipse(60% 100% at 50% 100%);
+  }
+  .hero-badge {
+    display: inline-block;
+    background: var(--sun);
+    color: var(--dark);
+    font-family: 'Fredoka One', cursive;
+    font-size: 0.85rem;
+    padding: 6px 18px;
+    border-radius: 50px;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #fff;
+    text-shadow: 0 3px 20px rgba(0,0,0,0.3);
+    margin-bottom: 12px;
+  }
+  .hero-sub {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.75);
+    margin-top: 8px;
+  }
+
+  /* ===== CONTAINER ===== */
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+
+  /* ===== SECTION TAG ===== */
+  .section-tag {
+    display: inline-block;
+    background: var(--lavender);
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+  }
+
+  /* ===== CARD ===== */
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 36px 36px 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    border-top: 4px solid var(--sky);
+    position: relative;
+    animation: fadeUp 0.4s ease both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .card:nth-child(1) { animation-delay: .05s; border-top-color: var(--sky); }
+  .card:nth-child(2) { animation-delay: .10s; border-top-color: var(--coral); }
+  .card:nth-child(3) { animation-delay: .15s; border-top-color: var(--grass); }
+  .card:nth-child(4) { animation-delay: .20s; border-top-color: var(--lavender); }
+  .card:nth-child(5) { animation-delay: .25s; border-top-color: var(--sun); }
+  .card:nth-child(6) { animation-delay: .30s; border-top-color: #FF6F00; }
+  .card:nth-child(7) { animation-delay: .35s; border-top-color: var(--sky); }
+  .card:nth-child(8) { animation-delay: .40s; border-top-color: var(--coral); }
+
+  .card h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.3rem;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+  .card p {
+    font-size: 0.93rem;
+    color: #555;
+    line-height: 1.75;
+    margin-bottom: 10px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+
+  .card ul {
+    list-style: none;
+    margin: 12px 0;
+  }
+  .card ul li {
+    font-size: 0.93rem;
+    color: #555;
+    line-height: 1.6;
+    padding: 9px 0 9px 26px;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .card ul li:last-child { border-bottom: none; }
+  .card ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--grass);
+    font-weight: 900;
+    font-size: 1rem;
+  }
+
+  /* ===== CONTACT BOX ===== */
+  .contact-box {
+    background: linear-gradient(160deg, #0D47A1 0%, #1565C0 100%);
+    border-radius: 24px;
+    padding: 48px 40px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 8px 40px rgba(13,71,161,0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-box::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(255,213,79,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .contact-box h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .contact-box p {
+    color: rgba(255,255,255,0.75);
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+  }
+  .contact-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #FF6F00, #F57C00);
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.1rem;
+    padding: 14px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 6px 24px rgba(255,111,0,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 32px rgba(255,111,0,0.5);
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 40px 24px;
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
+  footer a {
+    color: var(--sun);
+    text-decoration: none;
+  }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .site-header { padding: 14px 18px; }
+    .card { padding: 28px 20px; }
+    .contact-box { padding: 32px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="index.html" class="site-logo">📚 445 Prompts</a>
+  <a href="index.html" class="back-btn">← Back to Store</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">📋 Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="hero-sub">Last updated: May 21, 2026</p>
+</section>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <!-- Card 1 -->
+  <div class="card">
+    <div class="section-tag">01 · Overview</div>
+    <h2>Your Privacy Matters</h2>
+    <p>PromptKing ("we", "us", "our") operates this website. This Privacy Policy explains what personal information we collect, how we use it, and your rights regarding that data.</p>
+    <p>By accessing or purchasing from our website, you agree to the terms of this Privacy Policy. If you do not agree, please discontinue use of our site.</p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <div class="section-tag">02 · Information We Collect</div>
+    <h2>What We Collect</h2>
+    <ul>
+      <li><strong>Purchase data:</strong> When you buy through WarriorPlus, they handle payment processing. We may receive your name and email to fulfil your order and send product access.</li>
+      <li><strong>Support communications:</strong> If you contact us by email, we collect the information you provide in that message.</li>
+      <li><strong>Usage data:</strong> Basic analytics such as browser type, pages visited, time on site, and referring URLs via third-party tools.</li>
+      <li><strong>Cookies:</strong> Our site may use cookies to remember preferences and understand how visitors interact with our pages.</li>
+    </ul>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <div class="section-tag">03 · How We Use Your Data</div>
+    <h2>How We Use Information</h2>
+    <ul>
+      <li>To deliver your purchased digital product and send access credentials</li>
+      <li>To respond to support requests and answer questions</li>
+      <li>To send product updates or occasional promotional emails (unsubscribe anytime)</li>
+      <li>To analyse and improve our website and offerings</li>
+      <li>To comply with legal obligations</li>
+    </ul>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card">
+    <div class="section-tag">04 · Third Parties</div>
+    <h2>Third-Party Services</h2>
+    <p>We use the following platforms that may collect or process data on our behalf:</p>
+    <ul>
+      <li><strong>WarriorPlus</strong> — payment processing and affiliate management. Their privacy policy governs checkout data.</li>
+      <li><strong>Google Analytics</strong> — anonymised website traffic analytics.</li>
+      <li><strong>Email providers</strong> — for purchase receipts and support replies.</li>
+    </ul>
+    <p>We do not sell or rent your personal information to any third party for marketing purposes.</p>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card">
+    <div class="section-tag">05 · Data Retention</div>
+    <h2>How Long We Keep Data</h2>
+    <p>We retain your personal data only as long as necessary to fulfil the purposes outlined in this policy, or as required by law. Purchase records are typically kept for a minimum of 5 years for accounting purposes. You may request deletion at any time.</p>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="card">
+    <div class="section-tag">06 · Your Rights</div>
+    <h2>Your Rights</h2>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your personal data</li>
+      <li>Object to or restrict how we process your data</li>
+      <li>Withdraw consent at any time for marketing emails</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at the email address below.</p>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="card">
+    <div class="section-tag">07 · Security &amp; Children</div>
+    <h2>Security &amp; Children's Privacy</h2>
+    <p>We take reasonable precautions to protect your information from unauthorised access or misuse. However, no internet transmission is 100% secure.</p>
+    <p>Our site is not directed at children under 13. We do not knowingly collect data from minors. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.</p>
+  </div>
+
+  <!-- Card 8 -->
+  <div class="card">
+    <div class="section-tag">08 · Changes</div>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date above. Continued use of our site after changes constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <!-- Contact Box -->
+  <div class="contact-box">
+    <h2>Privacy Questions?</h2>
+    <p>Contact us anytime — we respond within 48 hours.</p>
+    <a href="mailto:contact.yourami@gmail.com" class="contact-btn">📧 contact.yourami@gmail.com</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 · All Rights Reserved · Powered by WarriorPlus</p>
+  <p style="margin-top: 8px;">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    &nbsp;·&nbsp;
+    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+    &nbsp;·&nbsp;
+    <a href="mailto:contact.yourami@gmail.com">Support</a>
+  </p>
+  <p style="margin-top: 16px; max-width: 720px; margin-left: auto; margin-right: auto; font-size: 0.75rem; color: rgba(255,255,255,0.3); line-height: 1.7; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px;">
+    <strong style="color: rgba(255,255,255,0.45);">Disclaimer:</strong> WarriorPlus is used to help manage the sale of products on this site. While WarriorPlus helps facilitate the sale, all payments are made directly to the product vendor and NOT WarriorPlus. Thus, all product questions, support inquiries and/or refund requests must be sent to the vendor. WarriorPlus's role should not be construed as an endorsement, approval or review of these products or any claim, statement or opinion used in the marketing of these products.
+  </p>
+</footer>
+
+</body>
+</html>
